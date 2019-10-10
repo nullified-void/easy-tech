@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Newtonsoft.Json;
+
 using System.Net;
 
 namespace problemHelper
@@ -75,15 +75,19 @@ namespace problemHelper
             package.Header = ProblemHeader.Text;
             package.probleminfo = ProblemText.Text;
             package.OS = getOSInfo() + '/' + Environment.OSVersion;
-            package.currentuser = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+            //package.currentuser = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+            package.currentuser = Environment.UserName;
             package.pcname = Environment.MachineName;
-            string json = JsonConvert.SerializeObject(package);
+            //string json = JsonConvert.SerializeObject(package);
+            string json = string.Format("{{\"CPU\": \"{0}\", \"OS\": \"{1}\", \"DateofReq\": \"{2}\", \"Header\": \"{3}\", \"probleminfo\": \"{4}\", \"currentuser\": \"{5}\", \"pcname\": \"{6}\"}}"
+                ,package.CPU,package.OS,package.DateofReq,package.Header,package.probleminfo,package.currentuser,package.pcname);
             var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://localhost:59735/api/values/add"); // сюда нужно будет вставить адрес апи сервера, принимающего запрос
             httpWebRequest.ContentType = "application/json";
             httpWebRequest.Method = "POST";
-            //var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse(); // с этим нужно будет работать если нужно принимать ответ с веб-сервера.
-            MessageBox.Show("Ваш запрос принят в обработку. Диалоговое окно закроется автоматически.", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-            this.Close();
+            //var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            MessageBox.Show("Ваш запрос принят в обработку. Диалоговое окно закроется автоматически.(отключил закрытие, чтобы можно было посмотреть на результат.)", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            ProblemText.Text = json;
+            //this.Close();
         }
         string getOSInfo()
         {

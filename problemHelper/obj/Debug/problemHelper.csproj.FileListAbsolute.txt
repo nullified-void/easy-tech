@@ -8,6 +8,3 @@ C:\Users\1\source\repos\problemHelper\problemHelper\obj\Debug\problemHelper.cspr
 C:\Users\1\source\repos\problemHelper\problemHelper\obj\Debug\problemHelper.csproj.CoreCompileInputs.cache
 C:\Users\1\source\repos\problemHelper\problemHelper\obj\Debug\problemHelper.exe
 C:\Users\1\source\repos\problemHelper\problemHelper\obj\Debug\problemHelper.pdb
-C:\Users\1\source\repos\problemHelper\problemHelper\bin\Debug\Newtonsoft.Json.dll
-C:\Users\1\source\repos\problemHelper\problemHelper\bin\Debug\Newtonsoft.Json.xml
-C:\Users\1\source\repos\problemHelper\problemHelper\obj\Debug\problemHelper.csproj.CopyComplete
