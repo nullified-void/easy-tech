@@ -1,0 +1,13 @@
+C:\Users\1\source\repos\problemHelper\problemHelper\bin\Debug\problemHelper.exe.config
+C:\Users\1\source\repos\problemHelper\problemHelper\bin\Debug\problemHelper.exe
+C:\Users\1\source\repos\problemHelper\problemHelper\bin\Debug\problemHelper.pdb
+C:\Users\1\source\repos\problemHelper\problemHelper\obj\Debug\problemHelper.csprojAssemblyReference.cache
+C:\Users\1\source\repos\problemHelper\problemHelper\obj\Debug\problemHelper.Form1.resources
+C:\Users\1\source\repos\problemHelper\problemHelper\obj\Debug\problemHelper.Properties.Resources.resources
+C:\Users\1\source\repos\problemHelper\problemHelper\obj\Debug\problemHelper.csproj.GenerateResource.cache
+C:\Users\1\source\repos\problemHelper\problemHelper\obj\Debug\problemHelper.csproj.CoreCompileInputs.cache
+C:\Users\1\source\repos\problemHelper\problemHelper\obj\Debug\problemHelper.exe
+C:\Users\1\source\repos\problemHelper\problemHelper\obj\Debug\problemHelper.pdb
+C:\Users\1\source\repos\problemHelper\problemHelper\bin\Debug\Newtonsoft.Json.dll
+C:\Users\1\source\repos\problemHelper\problemHelper\bin\Debug\Newtonsoft.Json.xml
+C:\Users\1\source\repos\problemHelper\problemHelper\obj\Debug\problemHelper.csproj.CopyComplete
